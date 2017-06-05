@@ -1,0 +1,45 @@
+<li class="kb_record">
+    <div class="kb_container">
+      <div class="collapsible-heading col-sm-12">
+          <a href="javascript:" onclick='expandContents(this);'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+          <!-- <a href="javascript:" onclick='deleteContents(this);'><i class='fa fa-trash' aria-hidden='true'></i></a> -->
+          <span></span>
+      </div>
+      <div class="content col-sm-12">
+          <input id="kb_id" type="hidden" value="" /> 
+          <a id="collapse" href="javascript:" onclick='collapseContents(this);'>
+            <i class="fa fa-minus"></i>
+          </a>
+          <label>Title:</label>
+          <input id='kb_title' class="form-control pull-left" type="text" value="" placeholder="Title" />
+      </div>
+      <div class="clearfix"></div>
+      <div class="content col-sm-12">
+          <label>Description:</label>
+          <textarea id='kb_description' required class="form-control" type="text" rows=3 placeholder="Description" ></textarea>
+      </div>
+      <div class="clearfix"></div>
+      <div class="content col-sm-12">
+          <label>URL:</label>
+          <input id='kb_url' class="form-control pull-left" type="text" value="" placeholder="Url" />
+      </div>
+      <div class="clearfix"></div>
+      <div class="content col-sm-12">
+          <label>Image URL:</label>
+          <input id='kb_image_url' class="form-control pull-left" type="text" value="" placeholder="Image Url" />
+      </div>
+      <div class="content col-sm-12">
+          <a href="javascript:" class='kbButton btn btn-primary mt-10' data-value='' onclick='saveRecord(this)'>
+            Save
+          </a>
+          <a href="javascript:" class='kbButton btn btn-danger mt-10' data-value='' onclick='deleteContents(this)'>
+            Delete
+          </a>
+          <a href="javascript:" class='kbButton btn btn-default mt-10' data-value='' onclick='cancelRecord(this)'>
+            Cancel
+          </a>
+      </div>
+          <!-- Commented Delete Row option for now. Will add it once the API is ready. -->
+          <!-- <a href="#/" class="delete_row pull-right mt-10"><i class="fa fa-trash-o"></i></a> -->
+    </div>
+</li>

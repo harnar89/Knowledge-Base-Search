@@ -1,0 +1,24 @@
+<div class='kb_heading'>
+	<h2>Knowledge Base</h2>
+</div>
+<hr />
+
+<!-- This will consist of the entire Knowledge Base associated with a Bot -->
+<div class="form-group">
+	<ol id="kb_list" type="1">
+	</ol>
+</div>
+
+<!-- Add a new Title/Description -->
+<div class='button_container'>
+	<!-- This button will remain commented until we get a confirmation on it. -->
+	<!-- <a id="submitKb" href="javascript:" class="btn btn-primary pull-left">
+		Save All
+	</a> -->
+	<a href="javascript:" class="btn btn-default mt-10 pull-right sub_text" onclick='addNewRow();'>
+		<i class="fa fa-plus-square-o pull-left" aria-hidden="true"></i>Add Title/Description
+	</a>
+<div>
+<div id="template_kb_record" style="display:none;">
+    {{> knowledge_base/kb_record prefix="__PREFIX__" index="__IDX__" }}
+</div>
